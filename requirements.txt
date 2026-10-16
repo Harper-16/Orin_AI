@@ -1,0 +1,17 @@
+# --- Core (always needed) ---
+# Install PyTorch separately for your hardware FIRST (see README.md).
+# CPU-only Linux example:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+datasets>=3.3.0
+numpy>=1.24
+tokenizers>=0.23.0
+
+# --- Plotting (plot_loss.py / plot_sft.py / plot_chatfix.py) ---
+matplotlib>=3.8
+
+# --- Qwen LoRA path (qwen_lora/train.py, qwen_lora/chat.py) ---
+transformers>=4.40
+peft>=0.10
+trl>=0.9
+accelerate>=0.30
+

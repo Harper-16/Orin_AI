@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env/
+
+# Model artefacts (large, machine-generated - never commit)
+checkpoints/
+adapters/
+*.pt
+*.bin
+*.safetensors
+*.u16
+
+# Data (downloaded / generated corpora - never commit)
+data/
+*.jsonl
+!examples/*.jsonl
+*.sqlite3
+*.sqlite3-journal
+data.zip
+
+# Logs & plots (regenerated every run)
+logs/
+*.log
+*.png
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
