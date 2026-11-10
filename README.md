@@ -1,5 +1,7 @@
 # Laptop Transformer trained from scratch
 
+[YouTube video](https://youtu.be/zraZKknc7LQ)
+
 This project builds and trains its own small decoder-only Transformer. The model parameters start from random initialization; no pretrained model weights are loaded by the scratch training or chat programs.
 
 The default network has about 15.7 million parameters, 8 Transformer layers, width 384, grouped-query causal attention, RMSNorm, SwiGLU, and rotary position embeddings. It uses 0.1 dropout during training; dropout is disabled during inference. It runs on CPU and fits ordinary laptop memory. The laptop used for this run has about 7.5 GiB RAM and no CUDA GPU.
